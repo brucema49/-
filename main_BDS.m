@@ -143,14 +143,6 @@ end
 
  disp('位置矩阵为');
  disp(position);
-%绘制卫星位置二维图形
-figure;scatter(xk, yk, 10);xlabel('x'),ylabel('y');
 
-%绘制卫星位置三维图形
-figure;
-scatter3(Gx,Gy,Gz,15);
-hold on
-scatter3(Mx,My,Mz,5,'g');
-xlabel('x'),ylabel('y'),zlabel('z');
 
 
