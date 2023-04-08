@@ -5,7 +5,6 @@ u=3.986004418*10^14;
 n0=sqrt(u)/(a_sqrt)^3;
 n=n0+deta_n;
 %2.计算归化时间tk
-year=2000+year;
 s1=floor((1461*(year+4800+ floor((month-14)/12 )))/4 );
 s2= floor(367*(month-2-floor((month-14)/12 )*12)/12 );
 s3=floor(3*floor((year+4900+floor((month-14)/12) )/100)/4 );
