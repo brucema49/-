@@ -1,5 +1,5 @@
 %打开文件
-BDS=fopen('brdc0010.txt','r');
+BDS=fopen('E:\桌面\卫星导航定位\src\2\MATLAB源程序\brdc0010.txt','r');
 %判断文件是否读取成功
 if BDS<0
     error('文件读取失败。');
@@ -114,5 +114,18 @@ end
 
  disp('位置矩阵为');
  disp(position);
+%绘制卫星位置二维图形
+figure;scatter(xk, yk, 10);xlabel('x'),ylabel('y');
 
+%绘制卫星位置三维图形
+figure;
+scatter3(Gx,Gy,Gz,15);
+hold on
+scatter3(Mx,My,Mz,5,'g');
+xlabel('x'),ylabel('y'),zlabel('z');
+[x,y,z]=sphere(50)
+X=x*6371.393*10^3;
+Y=y*6371.393*10^3;
+Z=z*6371.393*10^3;
+surf(X,Y,Z)
 
