@@ -1,5 +1,5 @@
 %打开文件
-BDS=fopen('E:\桌面\卫星导航定位\src\2\MATLAB源程序\brdc0010.txt','r');
+BDS=fopen('brdc0010.txt','r');
 %判断文件是否读取成功
 if BDS<0
     error('文件读取失败。');

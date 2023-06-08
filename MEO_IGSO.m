@@ -5,6 +5,7 @@ u=3.986004418*10^14;
 n0=sqrt(u)/(a_sqrt)^3;
 n=n0+deta_n;
 %2.计算归化时间tk
+
 s1=floor((1461*(year+4800+ floor((month-14)/12 )))/4 );
 s2= floor(367*(month-2-floor((month-14)/12 )*12)/12 );
 s3=floor(3*floor((year+4900+floor((month-14)/12) )/100)/4 );
@@ -51,7 +52,7 @@ xk=rk*cos(uk);
 yk=rk*sin(uk);
 
 %10计算观测时刻升交点经度Wk
-we=7.29211567*10^(-5);
+we=7.292115*10^(-5);
 Wk=W0+(W_-we)*tk-we*t0e;
 
 %11
